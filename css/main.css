@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+}
+
+body.welcome-page {
+    background-color: #3e3a39;
+}
+
+.logo-container {
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.logo-container img {
+    max-width: 100px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    border-radius: 0 !important;
+    min-height: 80px;
+}
+
+.navbar-brand {
+    padding-top: 12px;
+    padding-left: 60px;
+}
+
+.navbar-default {
+    /*background-color: rgba(100, 100, 100, 0.8);*/
+    /*border-color: rgba(100, 100, 100, 0.8);*/
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 20px;
+    padding: 30px 20px;
+}
+
+.parallax {
+    perspective: 300px;
+    -webkit-perspective: 300px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallax__layer {
+    /*padding: 100vh 0;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.debug .parallax__layer {
+    box-shadow: 0 0 0 2px #000000;
+    opacity: 0.9;
+}
+
+.carousel-inner {
+    height: 100vh;
+}
+
+.carousel img {
+    max-width: none;
+    width: 100%;
+}
+
+#pattern {
+    background-image: url('../images/bg-2.png');
+    /*background-size: 100% auto;*/
+}
+
+#more {
+    background-color: #ffffff;
+}
+
+#group1 {
+    z-index: 5;
+}
+
+#group2, #group3 {
+    z-index: 3;
+}
+
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.debug .parallax__group {
+    transform: translate3d(700px, 0, -800px) rotateY(30deg);
+}
+
+.parallax__layer--front {
+    background: transparent;
+    transform: translateZ(90px) scale(0.7);
+    -webkit-transform: translateZ(90px) scale(0.7);
+}
+
+.parallax__layer--base {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+.parallax__layer--back {
+    transform: translateZ(-300px) scale(2);
+    -webkit-transform: translateZ(-300px) scale(2);
+}
+
+.parallax__layer .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+/*#group1 .title {*/
+    /*left: 25%;*/
+    /*top: 72%;*/
+    /*font-size: 13vw;*/
+    /*font-weight: 500;*/
+    /*color: #ffffff;*/
+/*}*/
+
+#group1 .title,
+#group2 .title {
+    left: 30%;
+    width: 48%;
+}
+
+#group1 .title .heading,
+#group2 .title .heading {
+    font-size: 5vw;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.title .content {
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+
+#group3.parallax__group {
+    height: auto;
+}
+
+#group3 .section {
+    max-width: 100%;
+    height: auto;
+}
+
+.links .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.links .col-xs-6, #group3 .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container .title {
+    font-size: 2vw;
+    text-align: center;
+    color: #ffffff;
+}
+
+.image-container .title-background {
+    width: 60%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.4);
+    transition: all 1s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.image-container:hover .title-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.layout-container {
+    padding: 80px 0;
+    margin: 0 100px;
+}
+
+.background-solid {
+    background: #ffffff;
+}
+
+.layout-container + .layout-container {
+    border-top: 1px solid #acacac;
+}
+
+.content-container .image-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.image-container .caption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(80, 120, 200);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+}
+
+.image-container:hover .caption {
+    opacity: 0.6;
+}
+
+.section-title {
+    font-size: 3vw;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.subtitle {
+    font-size: 1.4vw;
+    margin-bottom: 10px;
+}
+
+.contents {
+    margin-top: 60px;
+}
+
+.contents i {
+    color: #3b5998;
+}
+
+.contents .paragraph {
+    width: calc(100% - 100px);
+}
+
+.mylink {
+    color: #333333;
+    transition: color 0.5s ease-in-out;
+    -web-kit-transition: color 0.5s ease-in-out;
+}
+
+.mylink:hover {
+    text-decoration: none;
+    color: #62BFE6;
+}
+
+.popular-links .mylink {
+    line-height: 30px;
+    font-size: 1.2vw;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
